@@ -1,12 +1,12 @@
 package model.entities;
 
-import java.text.SimpleDateFormat;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Contract {
-	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	
 	
 	
 	private int numberOfContract;
@@ -62,7 +62,7 @@ public class Contract {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		for(Installment i: installments) {
-			sb.append(sdf.format(i.getDueDate() ) + " - " + String.format("%.2f", i.getAmount()) + "\n" );
+			sb.append(i.toString());
 		}
 		return sb.toString();
 	}

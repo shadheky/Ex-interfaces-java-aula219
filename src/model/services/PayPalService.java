@@ -3,7 +3,8 @@ package model.services;
 public class PayPalService implements PaymentService {
 		
 	
-
+		
+	
 	@Override
 	public double[] interest(double amount, int months) {
 		double[] taxes = new double[months];
